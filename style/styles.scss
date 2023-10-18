@@ -3,7 +3,7 @@
 :root{
 // --colors--
     // --clr-primary-red: radial-gradient(#8d3030, #501010);
-	--clr-primary-red: #748cab;
+	--clr-primary-blue: #748cab;
     --clr-primary-white: #FFFFFF;
 
 
@@ -37,12 +37,12 @@ a{
 }
 a:hover{
 	color: #f78080;
-	transition: all 0.5s ease;
+	transition: all 0.5s ease
 
 }
 
 header{
-	background: var(--clr-primary-red);
+	background: var(--clr-primary-blue);
 	padding: 0, 2rem;
 	z-index: 10000000;
 	position: sticky;
@@ -93,7 +93,10 @@ position: relative;
 	transition: all 2s;
     transform: scale(1.03);
 	color: #ffffff;
-	box-shadow: -2px 2px rgb(230, 123, 123);
+	box-shadow:  inset 0 -3em 3em rgba(0, 200, 0, 0.3),
+	0 0 0 2px rgb(157, 155, 155),
+	0.3em 0.3em 1em rgba(200, 0, 0, 0.6);;
+	margin-bottom: 15px;
 
 }
 
@@ -116,7 +119,7 @@ position: relative;
 }
 
 .droppd_menu.open{
-	height: 240px;
+	height: 250px;
 }
 
 .droppd_menu li {
@@ -146,7 +149,7 @@ position: relative;
 	}
 	.droppd_menu {
 		display: block;
-		background: var(--clr-primary-red);
+		background: var(--clr-primary-blue);
 		z-index: 1000;
 	}
     .action-btn{
@@ -283,7 +286,7 @@ main{
         }
 
 		.event-title {
-color: var(--clr-primary-white);
+			color: var(--clr-primary-white);
 			font-size: 2rem;
 		}
 
@@ -380,7 +383,6 @@ color: var(--clr-primary-white);
         .books-card {
             display: flex;
             flex-direction: column;
-            max-width: auto;
             height: 30rem;
             position: relative;
             transition: transform 2s;
@@ -465,20 +467,31 @@ color: var(--clr-primary-white);
 // --end böcker nyheter--
 
 
-// -----info section "Om oss och nyhetsbrev"------
+// --- konwit-----
+
+
+
+
+
+// --- konwit-----
+
+
+
+
+// ----- Alvins del, info section "Om oss och nyhetsbrev"------
 
 .info-section{
-	// max-width: 65rem;
-	// margin-inline: auto;
-	// display: flex;
-	// flex-direction: column;
-	// align-items: center;
-	// gap: 3rem;
-	// color: var(--clr-primary-white);
+	max-width: 65rem;
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	color: var(--clr-primary-white);
 
 	.info-section-card:nth-child(1){
-		// grid-template-columns: 1fr;
-		@media(min-width:650px){
+		grid-template-columns: 1fr;
+		@media(min-width:791px){
 			grid-template-columns: 1fr 1fr;
 		}
 	}
@@ -486,9 +499,10 @@ color: var(--clr-primary-white);
 		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr;
-		background: var(--clr-primary-red);
+		background: var(--clr-primary-blue);
+		opacity: 90%;
 		border-radius: 1rem;
-		@media(min-width:650px) {
+		@media(min-width:791px) {
 			grid-template-columns: 60% 40%;
 		}
 		.card-img{
@@ -504,7 +518,7 @@ color: var(--clr-primary-white);
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin-top: 2rem;
+			margin-top: 1rem;
 			margin-block: 2rem;
 			gap: 2rem;
 			@media(min-width:650px){
@@ -512,10 +526,12 @@ color: var(--clr-primary-white);
 			}
 			h3{
 				font-size: 2rem;
+				color: var(--clr-primary-white);
 			}
 			p{
 				font-size: 1.2rem;
 				text-align: center;
+				padding-inline: 2rem;
 			}
 			.section-card-info{
 				display: flex;
@@ -577,7 +593,7 @@ color: var(--clr-primary-white);
 footer{
 	width: 100%;
 	padding-block: 2rem;
-	background: var(--clr-primary-red);
+	background: var(--clr-primary-blue);
 	color: var(--clr-primary-white);
 	display: flex;
 	flex-direction: column;
@@ -593,6 +609,7 @@ footer{
 
 	.logga{
 		height: 10rem;
+		width: 10rem;
 		align-self: center;
 		.logga-icon{
 			width: 100%;
@@ -610,6 +627,7 @@ footer{
 		h3{
 			text-decoration: underline;
 			font-size: 1.5rem;
+			color: var(--clr-primary-white);
 		}
 
 		.flex-gap{
@@ -628,11 +646,12 @@ footer{
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
 		margin-top: 2rem;
+		cursor: pointer;
 		@media(min-width:880px){
 			row-gap: 3rem;
 			column-gap: 2rem;
 		}
-		cursor: pointer;
+
 		p{
 			align-self: center;
 			justify-self: center;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --clr-primary-red: #748cab;
+  --clr-primary-blue: #748cab;
   --clr-primary-white: #FFFFFF;
   --ff-PTserif:"PT Serif", serif;
   --btn-primary-clr:#2a9d8f;
@@ -29,7 +29,7 @@ a:hover {
 }
 
 header {
-  background: var(--clr-primary-red);
+  background: var(--clr-primary-blue);
   padding: 0, 2rem;
   z-index: 10000000;
   position: sticky;
@@ -75,7 +75,8 @@ header {
   transition: all 2s;
   transform: scale(1.03);
   color: #ffffff;
-  box-shadow: -2px 2px rgb(230, 123, 123);
+  box-shadow: inset 0 -3em 3em rgba(0, 200, 0, 0.3), 0 0 0 2px rgb(157, 155, 155), 0.3em 0.3em 1em rgba(200, 0, 0, 0.6);
+  margin-bottom: 15px;
 }
 
 .action-btn:active {
@@ -97,7 +98,7 @@ header {
 }
 
 .droppd_menu.open {
-  height: 240px;
+  height: 250px;
 }
 
 .droppd_menu li {
@@ -124,7 +125,7 @@ header {
   }
   .droppd_menu {
     display: block;
-    background: var(--clr-primary-red);
+    background: var(--clr-primary-blue);
     z-index: 1000;
   }
   .action-btn {
@@ -297,7 +298,6 @@ main {
 .books__main .books-content .books-card {
   display: flex;
   flex-direction: column;
-  max-width: auto;
   height: 30rem;
   position: relative;
   transition: transform 2s;
@@ -353,7 +353,19 @@ main {
   }
 }
 
-@media (min-width: 650px) {
+.info-section {
+  max-width: 65rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  color: var(--clr-primary-white);
+}
+.info-section .info-section-card:nth-child(1) {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 791px) {
   .info-section .info-section-card:nth-child(1) {
     grid-template-columns: 1fr 1fr;
   }
@@ -362,10 +374,11 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  background: var(--clr-primary-red);
+  background: var(--clr-primary-blue);
+  opacity: 90%;
   border-radius: 1rem;
 }
-@media (min-width: 650px) {
+@media (min-width: 791px) {
   .info-section .info-section-card {
     grid-template-columns: 60% 40%;
   }
@@ -384,7 +397,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-block: 2rem;
   gap: 2rem;
 }
@@ -395,10 +408,12 @@ main {
 }
 .info-section .info-section-card .card-text h3 {
   font-size: 2rem;
+  color: var(--clr-primary-white);
 }
 .info-section .info-section-card .card-text p {
   font-size: 1.2rem;
   text-align: center;
+  padding-inline: 2rem;
 }
 .info-section .info-section-card .card-text .section-card-info {
   display: flex;
@@ -450,7 +465,7 @@ main {
 footer {
   width: 100%;
   padding-block: 2rem;
-  background: var(--clr-primary-red);
+  background: var(--clr-primary-blue);
   color: var(--clr-primary-white);
   display: flex;
   flex-direction: column;
@@ -467,6 +482,7 @@ footer {
 }
 footer .logga {
   height: 10rem;
+  width: 10rem;
   align-self: center;
 }
 footer .logga .logga-icon {
@@ -483,6 +499,7 @@ footer .contact-info {
 footer .contact-info h3 {
   text-decoration: underline;
   font-size: 1.5rem;
+  color: var(--clr-primary-white);
 }
 footer .contact-info .flex-gap {
   display: flex;

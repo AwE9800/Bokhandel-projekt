@@ -4,21 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- --meta tagg-- -->
+<!--meta tagg-->
     <meta name="description" content="En Bokhandel i söder stockholm. Allt du vill läsa hittar du hos oss Pärmar & Poesi - Vi har ett enormt sortiment av böcker till låga priser - Beställ idag hos Pärmar & Poesi! Brett sortiment.">
-<!-- --Font-awesome-hampburger-menu-- -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--font-awesome-hampburger-menu-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<!-- font-awesome -->
+	<script src="https://kit.fontawesome.com/87c09a8612.js" crossorigin="anonymous"></script>
 
-<!-- --stylesheets-- -->
+<!--stylesheets-->
     <link rel="stylesheet" href="style/app.css">
     <link rel="stylesheet" href="style/styles.css">
 	<script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- --javascriptkoden--\ -->
+    <!--javascriptkoden-->
     <script src="style/main.js" defer></script>
 
 
-    <!-- --Google fonts-- -->
+    <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,500&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=PT+Serif:ital@1&family=Poppins:ital,wght@1,200&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -26,36 +28,36 @@
 	<title>Pärmar & Poesi - Din lokala bokhandel </title>
 </head>
 <body>
-    <!-- --Kalles navbar-- -->
+    <!--Kalles navbar-->
     <header>
 		<section class="navbar">
 			<div class="Logo">
-				<img src="assets/Logga2.png" alt="A red, white and pink image of 5 books connected by a computer mouse" width="60px">
+				<img src="assets/Logga2.png" alt="A red, white and pink image of 5 books connected by a computer mouse" width="70rem">
 			</div>
 			<ul class="links">
-				<li><a href="sign in"></a></li>
-				<li><a href="Contact">kontakt</a></li>
-				<li><a href="Events">Events</a></li>
-				<li><a href="about us">Om oss</a></li>
-				<li><a href="info">info</a></li>
+				<li><a href="#">kontakt</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Om oss</a></li>
+				<li><a href="#">info</a></li>
 			</ul>
-			<a href="#" id="myBtn" class="action-btn">Logga in</a>
+			<a href="loggin.html" id="myBtn" class="action-btn">Logga in</a>
 			<div class="toggle-btn">
 				<i class="fa-solid fa-bars"></i>
 			</div>
 		</section>
 
-			<section class="droppd_menu">
-
+		<section class="droppd_menu">
+			<ul>
 				<li><a href="#">kontakt</a></li>
 				<li><a href="#">Events</a></li>
 				<li><a href="#">Om oss</a></li>
 				<li><a href="#">info</a></li>
 				<li><a href="#" class="action-btn">Logga in</a></li>
-			</section>
+			</ul>
+		</section>
 	</header>
 
-    <!-- --Kalles navbar slut-- -->
+    <!--Kalles navbar slut-->
     <section class="header__pärmis-posei"
             style="background-image: url(https://images.unsplash.com/photo-1456315138460-858d1089ddba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80://unsplash.com/photos/HAwA1N2gjo8);">
 
@@ -67,7 +69,7 @@
 
     </section>
 	<main>
-        <!-- --events, eric del-- -->
+        <!--events, eric del-->
         <section class="event__main">
             <h2 class="event-main-title">Events</h2>
             <div class="event-scroll-side">
@@ -107,7 +109,7 @@
         </section>
 
 
-    <!-- --Erics, Böcker grid-- -->
+    <!--Erics, Böcker grid-->
     <section class="books__main">
         <h2 class="books-title"> Boknyheter</h2>
         <div class="books-content">
@@ -192,41 +194,63 @@
         </div>
     </section>
 
-	<section class="info-section max-w-[65rem] mx-auto flex flex-col items-center gap-12 text-[color:var(--clr-primary-white)]">
-		<!-- om oss section -->
-		<article class="info-section-card grid grid-cols-1">
-			<section class="card-img">
-				<img class="image" src="assets/books-1605416_1280.jpg" alt="kvinna med böcker staplade">
-			</section>
-			<section class="card-text">
-				<h3>Om oss</h3>
-				<p>Vi är en bokklubb som startade på 90-talet.</p>
-			</section>
-		</article>
+<!--konwit-->
 
-				<!-- nyhetsbrev section -->
-		<article class="info-section-card">
-			<section class="card-text">
-				<h3>Nyhetsbrev</h3>
-				<div class="section-card-info">
-					<p>Prenumerera på våra nyhetsbrev här:</p>
-					<div class="email-button">
-						<input type="email" required placeholder="Epostadress">
-						<button>Prenumerera</button>
+
+
+
+<!--konwit-->
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--Alvin,Nyhetsbrev och om oss-->
+
+		<section class="info-section max-w-[65rem] mx-auto flex flex-col items-center gap-12 text-[color:var(--clr-primary-white)]">
+			<!--om oss section-->
+			<article class="info-section-card grid grid-cols-1">
+				<div class="card-img">
+					<img class="image" src="assets/books-1605416_1280.jpg" alt="kvinna med böcker staplade">
+				</div>
+				<div class="card-text">
+					<h3>Om oss</h3>
+					<p>Välkommen till vår lilla bokhandel, startad under det kreativa 90-talet. Vi är passionerade om böcker och stolta över
+					att vara en del av din läsresas historia. Vår butik är en skattkammare för bokälskare i vårt samhälle. Kom och upptäck
+					vår kuraterade samling av böcker, skapad med kärlek och omsorg för att inspirera och berika ditt läsliv.</p>
+					</div>
+			</article>
+
+					<!--nyhetsbrev section-->
+			<article class="info-section-card">
+				<div class="card-text">
+					<h3>Nyhetsbrev</h3>
+					<div class="section-card-info">
+						<p>Prenumerera på våra nyhetsbrev här:</p>
+						<div class="email-button">
+							<input type="email" required placeholder="Epostadress">
+							<button>Prenumerera</button>
+						</div>
 					</div>
 				</div>
-			</section>
-			<section class="card-img">
-				<img class="image" src="assets/books-4753506_1280.jpg" alt="Barnböcker">
-			</section>
-		</article>
-	</section>
-</main>
+				<div class="card-img">
+					<img class="image" src="assets/books-4753506_1280.jpg" alt="Barnböcker">
+				</div>
+			</article>
+		</section>
+	</main>
 
-				<!-- Alvin, Footer -->
+				<!--Alvin, Footer-->
 	<Footer>
 		<section class="logga">
-			<img id="myBtn" class="logga-icon" src="assets/Logga2.png" alt="Logga">
+			<img class="logga-icon" src="assets/Logga2.png" alt="Logga">
 		</section>
 		<section class="contact-info">
 			<h3>Kontakta oss</h3>
@@ -254,10 +278,7 @@
 	</Footer>
 
     <div class="demo-click-event">
-        <p id="demo"></p>
+        <p id="demo"></p>§
     </div>
 </body>
-
-			<!-- fontawesome -->
-<script src="https://kit.fontawesome.com/87c09a8612.js" crossorigin="anonymous"></script>
 </html>
