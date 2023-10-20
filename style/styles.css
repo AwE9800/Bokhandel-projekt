@@ -353,18 +353,6 @@ main {
   }
 }
 
-.info-section {
-  max-width: 65rem;
-  margin-inline: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  color: var(--clr-primary-white);
-}
-.info-section .info-section-card:nth-child(1) {
-  grid-template-columns: 1fr;
-}
 @media (min-width: 791px) {
   .info-section .info-section-card:nth-child(1) {
     grid-template-columns: 1fr 1fr;
